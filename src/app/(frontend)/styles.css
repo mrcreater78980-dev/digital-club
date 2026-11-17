@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Nunito', 'Arial', sans-serif;
+  --color-surface: #f1eefb;
+  --color-paper: #faf8ff;
+  --color-ink: #2b2550;
+  --color-muted: #625974;
+  --color-violet: #7c6cf0;
+  --color-violet-dark: #6250ce;
+  --color-violet-soft: #e4ddfc;
+  --color-mint: #6fd6b8;
+  --color-mint-soft: #dbf2e9;
+  --color-peach: #ffb48a;
+  --color-peach-soft: #fbe6db;
+  --color-yellow: #ffd66b;
+  --color-yellow-soft: #fff2ce;
+  --color-sky: #8cc8ff;
+  --color-sky-soft: #deedfc;
+  --color-danger: #a33d58;
+  --radius-clay: 2rem;
+  --shadow-clay:
+    9px 12px 26px #a99bca30, inset 3px 3px 9px #ffffffdf, inset -3px -4px 10px #a799cb20;
+  --shadow-pressed: inset 4px 4px 10px #a799cb40, inset -4px -4px 10px #ffffffeb;
+  --shadow-floating:
+    12px 18px 32px #9b8bc34a, inset 3px 3px 10px #ffffffa6, inset -4px -5px 12px #5c41ad21;
+  --shadow-violet: 5px 8px 15px #8d78cf48, inset 2px 3px 6px #b8aaff, inset -3px -4px 8px #5846be88;
+  --animate-float: float 6s ease-in-out infinite;
+}
+@utility clay {
+  box-shadow: var(--shadow-clay);
+}
+@utility clay-pressed {
+  box-shadow: var(--shadow-pressed);
+}
+@utility clay-floating {
+  box-shadow: var(--shadow-floating);
+}
+@utility clay-violet {
+  box-shadow: var(--shadow-violet);
+}
+@utility lift {
+  transition:
+    transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1.4),
+    box-shadow 0.3s;
+  &:hover {
+    transform: translateY(-4px);
+  }
+  &:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: var(--shadow-pressed);
+  }
+}
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+  }
+  body {
+    margin: 0;
+    overflow-x: clip;
+    background: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+  }
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    -webkit-tap-highlight-color: transparent;
+  }
+  button:not(:disabled),
+  a,
+  select {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-violet);
+    outline-offset: 5px;
+  }
+  ::selection {
+    background: var(--color-violet-soft);
+  }
+  dialog {
+    margin: auto;
+    color: var(--color-ink);
+  }
+  dialog::backdrop {
+    background: #34295555;
+    backdrop-filter: blur(8px);
+  }
+  main {
+    animation: enter 0.4s ease both;
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@utility animate-enter {
+  animation: enter 0.4s ease both;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.figma-custom-code-fragment {
+  display: contents;
+}
+.figma-bypass-link {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  left: 1rem;
+  padding: 1rem;
+  background: var(--color-paper);
+  border-radius: var(--radius-clay);
+  transform: translateY(-180%);
+}
+.figma-bypass-link:focus {
+  transform: translateY(0);
+}

@@ -1,0 +1,85 @@
+<svg width="700" height="590" viewBox="0 0 700 590" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <linearGradient id="laptop" x1="215" y1="180" x2="500" y2="405" gradientUnits="userSpaceOnUse"><stop stop-color="#D0BCFF"/><stop offset=".38" stop-color="#AA8CF2"/><stop offset="1" stop-color="#8062CD"/></linearGradient>
+ <linearGradient id="screen" x1="250" y1="220" x2="460" y2="370" gradientUnits="userSpaceOnUse"><stop stop-color="#40365F"/><stop offset="1" stop-color="#24213E"/></linearGradient>
+ <linearGradient id="base" x1="173" y1="360" x2="432" y2="468" gradientUnits="userSpaceOnUse"><stop stop-color="#D4C2FF"/><stop offset=".6" stop-color="#B799EE"/><stop offset="1" stop-color="#8163C2"/></linearGradient>
+ <linearGradient id="white" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF"/><stop offset=".5" stop-color="#F1EDFB"/><stop offset="1" stop-color="#CFC7E7"/></linearGradient>
+ <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C0FAE4"/><stop offset=".4" stop-color="#90E3C2"/><stop offset="1" stop-color="#4BB59A"/></linearGradient>
+ <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D5ECFF"/><stop offset=".4" stop-color="#99D3FD"/><stop offset="1" stop-color="#5B9EDE"/></linearGradient>
+ <linearGradient id="peach" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE7CC"/><stop offset=".5" stop-color="#FFC498"/><stop offset="1" stop-color="#E99770"/></linearGradient>
+ <linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF2AD"/><stop offset=".4" stop-color="#FFDE7D"/><stop offset="1" stop-color="#E6B64B"/></linearGradient>
+ <radialGradient id="orb" cx=".3" cy=".2" r=".8"><stop stop-color="#D8C7FF"/><stop offset=".55" stop-color="#B89EEB"/><stop offset="1" stop-color="#9278C4"/></radialGradient>
+ <filter id="shadow" x="-60%" y="-60%" width="230%" height="250%"><feDropShadow dx="6" dy="13" stdDeviation="12" flood-color="#8D70B9" flood-opacity=".22"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="15"/></filter>
+ <filter id="tiny"><feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#8264B0" flood-opacity=".2"/></filter>
+</defs>
+<ellipse cx="369" cy="491" rx="207" ry="22" fill="#AA94D0" opacity=".17" filter="url(#soft)"/>
+<ellipse cx="366" cy="290" rx="238" ry="225" fill="#E9E2FA" opacity=".7"/>
+<path d="M108 274C46 180 206 81 416 112C670 150 660 370 514 457" stroke="#D5C9EE" stroke-width="2" stroke-dasharray="6 10"/>
+<!-- Mint cloud, sculpted from overlapping soft volumes -->
+<g filter="url(#shadow)" transform="translate(151 100) rotate(-9)">
+<path d="M0 39C0 23 12 11 29 13C34-7 65-8 75 11C98 4 115 21 111 38C134 45 130 70 108 73H24C5 73-9 54 0 39Z" fill="url(#mint)"/>
+<path d="M23 29C34 19 43 19 51 22" stroke="#D8FFEF" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+</g>
+<!-- Laptop: deliberately chunky, bevelled and softly rounded -->
+<g filter="url(#shadow)">
+<path d="M228 207Q228 187 248 190L491 221Q508 223 508 242L492 398L219 366Z" fill="#7759B8"/>
+<path d="M217 199Q217 181 237 184L480 215Q498 217 497 237L481 388L209 355Z" fill="url(#laptop)"/>
+<path d="M235 214Q235 206 245 207L471 235Q478 236 478 245L465 365L226 337Z" fill="url(#screen)"/>
+<path d="M239 218L467 247" stroke="#6D5C88" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+<circle cx="359" cy="211" r="3" fill="#E4D8FF"/>
+<path d="M208 350L482 384L414 461Q407 469 390 467L131 425Q117 423 126 413Z" fill="#9270CE"/>
+<path d="M208 347L480 381L409 448Q403 455 389 453L131 412Q122 410 131 402Z" fill="url(#base)"/>
+<path d="M223 360L452 389L404 431L179 396Z" fill="#9D7FD0"/>
+<g stroke="#D9C7F5" stroke-width="5" stroke-linecap="round" opacity=".7">
+<path d="M227 369L437 395M216 378L427 405M204 387L414 415"/>
+<path d="M248 367L220 394M274 371L247 398M301 374L274 402M328 378L301 405M355 381L329 409M383 385L357 413M410 389L386 418"/>
+</g>
+<path d="M254 406L323 416L304 433L235 422Z" fill="#C8B0EC"/>
+<path d="M135 414L390 455Q402 457 411 451" stroke="#E6D6FF" stroke-width="3" stroke-linecap="round" opacity=".75"/>
+<!-- Friendly code editor -->
+<circle cx="250" cy="228" r="3.5" fill="#FFBDAD"/><circle cx="262" cy="230" r="3.5" fill="#FFE1A1"/><circle cx="274" cy="231" r="3.5" fill="#9ADFC4"/>
+<path d="M259 259L245 268L259 281M278 259L263 293M284 267L297 279L282 289" stroke="#BCA3FF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M251 310L309 317M250 322L342 334M319 319L365 325M321 291L378 298M322 278L427 291M322 265L395 274" stroke="#98DECC" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+<path d="M374 326L432 333M353 335L396 341" stroke="#FFC8A0" stroke-width="5" stroke-linecap="round"/>
+</g>
+<!-- Puffy code tile -->
+<g transform="translate(77 250) rotate(-13)" filter="url(#shadow)">
+<rect width="116" height="108" rx="30" fill="url(#white)"/>
+<path d="M42 34L24 53L42 70M77 34L95 53L77 70M65 29L54 76" stroke="#A28ADE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<!-- Rocket -->
+<g transform="translate(510 73) rotate(26)" filter="url(#shadow)">
+<path d="M23 92C-3 100-10 122-7 145L27 129Z" fill="url(#peach)"/>
+<path d="M69 89C96 101 102 121 98 143L65 126Z" fill="url(#peach)"/>
+<path d="M27 130C18 99 17 40 47 6C80 39 80 99 67 130Z" fill="url(#white)"/>
+<path d="M47 6C34 20 27 35 25 49L72 49C69 32 60 16 47 6Z" fill="url(#peach)"/>
+<circle cx="48" cy="74" r="20" fill="#D2C5E7"/>
+<circle cx="47" cy="72" r="14" fill="url(#blue)"/>
+<ellipse cx="43" cy="67" rx="5" ry="7" fill="#E7F7FF" opacity=".8"/>
+<path d="M32 128L62 128L58 142L37 142Z" fill="#B7A0DD"/>
+<path d="M39 146Q23 163 48 189Q70 165 56 146Z" fill="url(#yellow)"/>
+<path d="M45 147Q36 161 48 174Q59 160 52 147Z" fill="#FFF1BF"/>
+</g>
+<!-- Little clay robot -->
+<g transform="translate(488 338) rotate(9)" filter="url(#shadow)">
+<rect x="20" y="75" width="84" height="81" rx="31" fill="url(#white)"/>
+<rect x="8" y="8" width="110" height="86" rx="32" fill="url(#white)"/>
+<rect x="21" y="25" width="84" height="51" rx="22" fill="#494064"/>
+<ellipse cx="44" cy="48" rx="7" ry="10" fill="#B7F0DB"/><ellipse cx="82" cy="48" rx="7" ry="10" fill="#B7F0DB"/>
+<path d="M56 64Q63 69 70 63" stroke="#B7F0DB" stroke-width="3" stroke-linecap="round"/>
+<rect x="55" y="-9" width="10" height="22" rx="5" fill="#B6A0DA"/><circle cx="60" cy="-12" r="10" fill="url(#peach)"/>
+<rect x="-7" y="37" width="18" height="33" rx="9" fill="url(#peach)"/><rect x="115" y="37" width="18" height="33" rx="9" fill="url(#peach)"/>
+<rect x="0" y="97" width="22" height="46" rx="11" fill="url(#mint)" transform="rotate(15 0 97)"/>
+<rect x="102" y="95" width="22" height="44" rx="11" fill="url(#mint)" transform="rotate(-24 102 95)"/>
+<rect x="27" y="146" width="27" height="22" rx="10" fill="url(#peach)"/><rect x="74" y="146" width="27" height="22" rx="10" fill="url(#peach)"/>
+<circle cx="62" cy="116" r="15" fill="url(#mint)"/><path d="M59 107L65 115L59 123" stroke="#EBFFF7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<!-- Clay ring and floating forms -->
+<g transform="translate(123 454) rotate(-22)" filter="url(#shadow)"><ellipse rx="39" ry="25" stroke="url(#blue)" stroke-width="20"/><ellipse rx="39" ry="25" stroke="#DAF0FF" stroke-opacity=".3" stroke-width="3" transform="translate(-3 -5)"/></g>
+<g transform="translate(598 280) rotate(18)" filter="url(#shadow)"><rect width="49" height="49" rx="16" fill="url(#mint)"/><path d="M8 15Q8 8 17 8" stroke="#E0FFF0" stroke-width="4" stroke-linecap="round" opacity=".7"/></g>
+<circle cx="383" cy="95" r="22" fill="url(#orb)" filter="url(#shadow)"/>
+<circle cx="215" cy="486" r="10" fill="url(#peach)" filter="url(#tiny)"/>
+<path d="M76 159Q79 143 86 157L91 167L106 169Q121 172 107 180L95 187L93 202Q90 219 81 204L73 191L58 189Q42 186 57 177L69 171Z" fill="url(#yellow)" filter="url(#tiny)"/>
+<path d="M434 486Q439 470 446 484L451 494L464 496Q478 500 465 507L455 513L452 527Q449 542 442 528L435 517L422 514Q408 510 421 503L430 498Z" fill="url(#yellow)" filter="url(#tiny)"/>
+</svg>
